@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#100b0b">
+  <meta name="description" content="E se os cientistas descobrissem terra habitável em Marte, mas apenas os animais pudessem viver lá? Conheça MARTE SELVAGEM.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MARTE SELVAGEM — Animal Planet em Marte">
+  <meta property="og:description" content="Você é um astronauta e vai colocar um satélite em Marte para a Terra observar os animais. A vida recomeça — mas sem os humanos.">
+  <meta property="og:image" content="marte-selvagem-preview.png">
+  <meta property="og:image:alt" content="Marte Selvagem: um vale marciano habitável, animais selvagens e um satélite de observação.">
+  <title>MARTE SELVAGEM — Animal Planet em Marte</title>
+  <style>
+    :root { color-scheme: dark; --orange: #ff6a2a; --cream: #f8eee4; --muted: #cbbdb3; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 22px; }
+    body { margin: 0; background: #100b0b; color: var(--cream); font-family: Arial, Helvetica, sans-serif; }
+    .hero { width: 100%; max-width: 1672px; margin: 0 auto; position: relative; line-height: 0; }
+    .hero img { display: block; width: 100%; height: auto; }
+    /* Área clicável alinhada ao botão ilustrado na arte. */
+    .hero-cta { position: absolute; left: 4.7%; top: 62.1%; width: 22.8%; height: 7.5%; display: block; border-radius: 12px; cursor: pointer; }
+    .hero-cta:focus-visible { outline: 3px solid white; outline-offset: 3px; }
+    .fallback-cta { display: none; text-align: center; padding: 22px 18px 4px; }
+    .button { display: inline-flex; align-items: center; justify-content: center; gap: 10px; border: 1px solid var(--orange); border-radius: 8px; padding: 14px 22px; background: linear-gradient(135deg, #4a1b0e, #1a0d0a); color: white; text-decoration: none; font-size: .9rem; font-weight: 700; letter-spacing: .08em; box-shadow: 0 0 20px #ff5b2420; transition: transform .2s, box-shadow .2s; }
+    .button:hover { transform: translateY(-2px); box-shadow: 0 0 26px #ff5b2450; }
+    .explore { padding: 88px 24px 76px; background: radial-gradient(ellipse at top, #35170f 0%, #160d0b 48%, #100b0b 100%); border-top: 1px solid #522719; }
+    .content { max-width: 1040px; margin: 0 auto; }
+    .eyebrow { color: var(--orange); text-transform: uppercase; letter-spacing: .25em; font-size: .75rem; font-weight: 700; text-align: center; }
+    h1 { font-size: clamp(2rem, 5vw, 3.7rem); line-height: 1.08; text-align: center; letter-spacing: .04em; margin: 18px 0 24px; }
+    .lead { text-align: center; font-size: clamp(1.2rem, 2.6vw, 1.65rem); line-height: 1.5; color: #fff6ed; max-width: 850px; margin: 0 auto 24px; }
+    .body-copy { max-width: 790px; margin: 0 auto; color: var(--muted); font-size: 1.05rem; line-height: 1.85; text-align: center; }
+    .body-copy p { margin: 0 0 18px; }
+    .emphasis { color: var(--orange); font-weight: 800; letter-spacing: .04em; }
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 48px; }
+    .card { border: 1px solid #603021; border-radius: 12px; padding: 25px 23px; background: linear-gradient(145deg, #28140fdd, #130c0b); }
+    .card .icon { color: var(--orange); font-size: 1.5rem; margin-bottom: 14px; }
+    .card h2 { margin: 0 0 10px; color: #fff1e5; font-size: 1rem; letter-spacing: .08em; }
+    .card p { margin: 0; color: var(--muted); line-height: 1.65; font-size: .95rem; }
+    .closing { margin: 52px auto 0; text-align: center; }
+    .closing p { font-size: clamp(1.25rem, 3vw, 2rem); line-height: 1.5; margin: 0 auto 24px; max-width: 800px; }
+    .back { color: #e8b9a2; display: inline-block; margin-top: 28px; font-size: .85rem; letter-spacing: .08em; text-decoration: none; }
+    .back:hover { color: white; }
+    footer { padding: 26px 18px 34px; border-top: 1px solid #38201a; color: #9f8b80; text-align: center; font-size: .72rem; letter-spacing: .2em; text-transform: uppercase; }
+    @media (max-width: 700px) {
+      .hero-cta { display: none; }
+      .fallback-cta { display: block; }
+      .explore { padding: 56px 20px; }
+      .cards { grid-template-columns: 1fr; margin-top: 32px; }
+      .card { padding: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero" id="inicio" aria-label="Apresentação de Marte Selvagem">
+      <img src="marte-selvagem-preview.png" alt="MARTE SELVAGEM: um mundo marciano com água, vegetação, animais selvagens, um astronauta e um satélite de observação." fetchpriority="high">
+      <a class="hero-cta" href="#explorar" aria-label="Explorar o projeto MARTE SELVAGEM" title="Explorar o projeto"></a>
+    </section>
+    <div class="fallback-cta"><a class="button" href="#explorar">▶ &nbsp; EXPLORAR O PROJETO</a></div>
+
+    <section class="explore" id="explorar">
+      <div class="content">
+        <div class="eyebrow">Um novo mundo. Uma nova chance para a vida.</div>
+        <h1>MARTE SELVAGEM</h1>
+        <p class="lead">E se os cientistas descobrissem terra habitável em Marte, mas apenas os animais pudessem viver lá?</p>
+        <div class="body-copy">
+          <p>Você é um astronauta e sua missão é colocar um satélite em Marte para que a Terra possa observar os animais e acompanhar o nascimento de um ecossistema extraordinário.</p>
+          <p>Será o nosso <strong>Animal Planet em Marte</strong>: um mundo de paisagens selvagens, espécies diferentes e histórias que acontecem sem roteiro.</p>
+          <p>Aqui, os animais exploram, procuram alimento, descansam, formam vínculos e enfrentam os desafios do ambiente. Você não controla cada movimento — observa a vida se desenrolar.</p>
+          <p class="emphasis">Lá, a vida acontece como no princípio. MAS SEM OS HUMANOS.</p>
+        </div>
+
+        <div class="cards" aria-label="Como será o jogo">
+          <article class="card"><div class="icon" aria-hidden="true">⌁</div><h2>OBSERVE</h2><p>Use o satélite e ferramentas de observação para acompanhar os animais sem interferir diretamente em suas vidas.</p></article>
+          <article class="card"><div class="icon" aria-hidden="true">✧</div><h2>VIDA SELVAGEM</h2><p>Animais com necessidades e comportamentos próprios exploram o habitat, encontram alimento e reagem ao que acontece ao redor.</p></article>
+          <article class="card"><div class="icon" aria-hidden="true">◉</div><h2>UM ECOSSISTEMA SEM HUMANOS</h2><p>Com o passar do tempo, o ambiente muda e cada observação pode revelar uma nova história da vida em Marte.</p></article>
+        </div>
+
+        <div class="closing">
+          <p>Você não controla a natureza.<br><span class="emphasis">Você acompanha sua história.</span></p>
+          <a class="button" href="#inicio">↑ &nbsp; VOLTAR AO INÍCIO</a>
+          <br><a class="back" href="#inicio">RETORNAR À VISÃO DE MARTE</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>MARTE SELVAGEM · CONCEITO ORIGINAL · EM DESENVOLVIMENTO</footer>
+</body>
+</html>
